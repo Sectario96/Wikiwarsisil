@@ -1,0 +1,46 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  background: url('./bg_pixel_dark.png') no-repeat center center fixed;
+  background-size: cover;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #00ff88;
+  text-shadow: 0 0 10px #00ff88;
+}
+
+.container {
+  text-align: center;
+  padding-top: 15vh;
+}
+
+h1 {
+  font-size: 3.5rem;
+  margin-bottom: 0.2em;
+}
+
+.subtitle {
+  font-size: 1.3rem;
+  color: #bbffdd;
+}
+
+#sound-toggle {
+  position: fixed;
+  top: 15px;
+  right: 15px;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+  z-index: 1000;
+  filter: drop-shadow(0 0 5px #00ff88);
+}
+
+footer {
+  position: fixed;
+  bottom: 10px;
+  width: 100%;
+  text-align: center;
+  font-size: 0.8rem;
+  color: #ffffff88;
+  text-shadow: none;
+}
