@@ -8,17 +8,33 @@
   <link rel="stylesheet" href="./style.css" />
 </head>
 <body>
-  <div class="container">
-    <h1>WikiWars</h1>
+  <div class="main-content">
+    <h1 class="title">WikiWars</h1>
     <p class="subtitle">Una WikiFansite para hacer tu experiencia más agradable en el juego</p>
+    <button id="menu-toggle">☰</button>
   </div>
-  <img id="sound-toggle" src="./sound-toggle.png" alt="Sound Toggle" />
+
+  <nav id="slide-menu">
+    <h2>WikiWars</h2>
+    <ul>
+      <li><a href="#contactame"><img src="icon-daga.png" alt=""> Contactame</a></li>
+      <li><a href="#misiones"><img src="icon-espada.png" alt=""> Misiones</a></li>
+      <li><a href="#clases"><img src="icon-baston.png" alt=""> Clases</a></li>
+      <li><a href="#bosses"><img src="icon-escudo.png" alt=""> Bosses</a></li>
+      <li><a href="#loot"><img src="icon-libro.png" alt=""> Loot</a></li>
+      <li><a href="#guias"><img src="icon-arco.png" alt=""> Guias</a></li>
+    </ul>
+  </nav>
+
   <audio id="bg-music" autoplay loop>
     <source src="./music.mp3" type="audio/mpeg" />
   </audio>
+  <img id="sound-toggle" src="./sound-toggle.png" alt="Mute" />
+
   <footer>
     Fansite 2025 By Sectario. All rights reserved. Para jugadores mayores de 13 años. Fansite no oficial.
   </footer>
+
   <script type="module" src="./index.js"></script>
 </body>
 </html>

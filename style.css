@@ -4,19 +4,19 @@ body {
   padding: 0;
   background: url('./bg_pixel_dark.png') no-repeat center center fixed;
   background-size: cover;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Lucida Console', monospace;
   color: #00ff88;
-  text-shadow: 0 0 10px #00ff88;
+  cursor: url('cursor.gif'), auto;
 }
 
-.container {
+.main-content {
   text-align: center;
-  padding-top: 15vh;
+  padding-top: 20vh;
 }
 
-h1 {
-  font-size: 3.5rem;
-  margin-bottom: 0.2em;
+.title {
+  font-size: 4rem;
+  text-shadow: 0 0 10px #00ff88;
 }
 
 .subtitle {
@@ -24,14 +24,74 @@ h1 {
   color: #bbffdd;
 }
 
+#menu-toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  font-size: 2rem;
+  background: transparent;
+  border: none;
+  color: #00ff88;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+#slide-menu {
+  position: fixed;
+  top: 0;
+  right: -300px;
+  width: 280px;
+  height: 100%;
+  background-color: rgba(5, 5, 5, 0.95);
+  box-shadow: -2px 0 10px #00ff88;
+  padding: 20px;
+  transition: right 0.3s ease;
+  z-index: 1000;
+}
+
+#slide-menu h2 {
+  color: #00ff88;
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+#slide-menu ul {
+  list-style: none;
+  padding: 0;
+}
+
+#slide-menu li {
+  margin: 15px 0;
+}
+
+#slide-menu a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: all 0.2s ease;
+}
+
+#slide-menu a:hover {
+  color: #00ff88;
+  text-shadow: 0 0 10px #00ff88;
+}
+
+#slide-menu img {
+  width: 24px;
+  height: 24px;
+}
+
 #sound-toggle {
   position: fixed;
-  top: 15px;
-  right: 15px;
+  top: 20px;
+  left: 20px;
   width: 32px;
   height: 32px;
   cursor: pointer;
-  z-index: 1000;
+  z-index: 1001;
   filter: drop-shadow(0 0 5px #00ff88);
 }
 
@@ -42,5 +102,4 @@ footer {
   text-align: center;
   font-size: 0.8rem;
   color: #ffffff88;
-  text-shadow: none;
 }
