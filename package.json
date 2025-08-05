@@ -1,0 +1,12 @@
+{
+  "name": "wikiwars",
+  "version": "1.0.0",
+  "description": "Fansite WikiWars hecho con Parcel",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "devDependencies": {
+    "parcel": "^2.10.0"
+  }
+}
